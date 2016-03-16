@@ -177,7 +177,7 @@ select {
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-  background-color：#FFFFFF
+  background-color：#FFFFFF;
   /*background: url("../img/arrow.png") no-repeat scroll right center transparent;*/
   padding-right: 14px;
 }
@@ -224,7 +224,7 @@ select {
 	height:5rem; 
 	border:0;
 	margin-left: 20%;
-	background-image:url(../img/button.png);
+	background-image:url('../img/button.png');
 	background-repeat:no-repeat;
 	background-position:top left;
 }
@@ -239,6 +239,16 @@ select {
 .btn_info{
 	font-size: 13px;
 	text-align: center;
+}
+
+.foot_div{
+	background-color: rgb(49,82,166);
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.foot_div ul{
+
 }
 
 .clear {
