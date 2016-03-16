@@ -35,6 +35,13 @@ $(function ($) {
 			});
 			return false;
 		}
+		if(!(/^1[3|4|5|7|8]\d{9}$/.test($('#mobileId').val()))){
+			layer.tips('手机号码有误，请重填', '#mobileId', {
+				tips: [1, '#3595CC'],
+				time: 2000
+			});
+			return false;
+		}
 		callback();
 	}
     $('#submitBtn').on('click',function(){
