@@ -1,5 +1,5 @@
 @charset "utf-8";
-html,body,div,ul,ol,li,dd,dt,dl,p,h3,h4,span,input,select,textarea,select,option,table,tr,td,header,footer,section
+html,body,div,ul,ol,li,dd,dt,dl,p,h3,h4,span,input,select,textarea,option,table,tr,td,header,footer,section
 	{
 	padding: 0;
 	margin: 0;
@@ -177,53 +177,24 @@ select {
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
-  /*background-color：＃FFF*/
-  background: url("../img/arrow.png") no-repeat scroll right center transparent;
+  background-color：#FFFFFF;
+  /*background: url("../img/arrow.png") no-repeat scroll right center transparent;*/
   padding-right: 14px;
 }
 
-/*input[type=radio] {
-	-webkit-appearance: none;
-	width: 1rem;
-	height: 1rem;
-	background: url("../app_img/gou2.png") no-repeat;
-	background-size: 100%;
-	margin-right: 0.3rem;
-	vertical-align: middle;
-}*/
-
-/*input[type=checkbox].undo {
-	background: url("../app_img/gou3.png") no-repeat;
-	background-size: 100%;
-}*/
-
-.add_cart_radio{
-    float:left;
-    margin-top:0.5em;
-    margin-right:0.5em;
-}
-.add_cart_radio input[type="radio"]{
-    display:none;
-}
-.add_cart_radio input[type="radio"] + label{
-    padding:0.2em 1em;
-    border:1px solid #CCCCCC;
-    border-radius:0.5em;
-    color:#999;
-}
-.add_cart_radio input[type="radio"]:checked + label{
-    padding:0.2em 1em;
-    border:1px solid #FF6600;
-    border-radius:0.5em;
-    background:#FF6600;
-    color:#FFFFFF;
-}
 .container{
 	background:#FBE01F;
 }
+
 .main-container{
 	background:#FBE01F;
 	background-size: 100% ;
+}
+
+.share-container{
+	position: fixed;
+	top: 3rem;
+	z-index: 2000;
 }
 
 .user_form{}
@@ -244,6 +215,7 @@ select {
 .fr {
 	float: right;
 	display: inline;
+	font-size: 0.9rem;
 	margin-right: 9%;
 }
 
@@ -252,7 +224,7 @@ select {
 	height:5rem; 
 	border:0;
 	margin-left: 20%;
-	background-image:url(../img/button.png);
+	background-image:url('../img/button.png');
 	background-repeat:no-repeat;
 	background-position:top left;
 }
@@ -265,8 +237,18 @@ select {
 }
 
 .btn_info{
-	font-size: 0.01rem;
+	font-size: 13px;
 	text-align: center;
+}
+
+.foot_div{
+	background-color: rgb(49,82,166);
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.foot_div ul{
+
 }
 
 .clear {
