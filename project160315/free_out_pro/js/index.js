@@ -71,7 +71,7 @@ $(function ($) {
 		layer.open({
 		    type: 1,
 		    title: false,
-		    closeBtn: 0,
+		    closeBtn: 1,
 		    skin: 'layui-layer-nobg', //没有背景色
 		    shadeClose: true,
 		    content: $('#statementDiv')
@@ -81,7 +81,7 @@ $(function ($) {
 		layer.open({
 		    type: 1,
 		    title: false,
-		    closeBtn: 0,
+		    closeBtn: 1,
 		    skin: 'layui-layer-nobg', //没有背景色
 		    shadeClose: true,
 		    content: $('#escapeClauseDiv')
