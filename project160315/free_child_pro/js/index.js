@@ -46,7 +46,7 @@ $(function ($) {
     }
 
     $('#submitBtn').on('click', function () {
-        //checkForm(function () {
+        checkForm(function () {
             layer.open({
                 type: 1,
                 title: false,
@@ -56,7 +56,7 @@ $(function ($) {
                 shadeClose: true,
                 content: $('#shareDiv'),
             });
-        //})
+        })
     });
     $('#statement').on('click', function () {
         layer.open({
