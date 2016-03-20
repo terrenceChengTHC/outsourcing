@@ -251,13 +251,13 @@ select {
 }
 
 .sub_btn{
-	position: absolute;
-	left:30%;
+	margin:0 auto;
 	width: 7rem;
 	z-index: 9;
 }
 
 .btn_info{
+	margin:0 auto;
 	font-size: 13px;
 	text-align: center;
 }

@@ -14,6 +14,16 @@ $(function ($) {
 			});
 			return false;
 		}
+		var minDate = $('input[type=date]').attr('min');
+		var date1 = new Date(Date.parse(minDate));
+		var date2 = new Date($('#birthdayId').val());
+		if (date1.getTime() > date2.getTime()) {
+			layer.tips('投保人不能超过59周岁', '#birthdayId', {
+				tips: [1, '#3595CC'],
+				time: 2000
+			});
+			return false;
+		}
 		if($('#loc_province').val()==""){
 			layer.tips('常住省份不能为空', '#loc_province', {
 				tips: [1, '#3595CC'],
@@ -83,4 +93,9 @@ $(function ($) {
 	$('#escapeClauseDiv').on('click',function(){
 		layer.closeAll();
 	});
+	var myDate = new Date();
+	var maxDate = myDate.getFullYear()+'-'+(myDate.getMonth()+1)+'-'+myDate.getDate();
+	var minDate = (myDate.getFullYear()-59)+'-'+(myDate.getMonth()+1)+'-'+myDate.getDate();
+	$('input[type=date]').attr('min',minDate);
+	$('input[type=date]').attr('max',maxDate);
 });

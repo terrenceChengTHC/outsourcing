@@ -244,15 +244,14 @@ select {
 	width:15rem; 
 	height:5rem; 
 	border:0;
-	margin-left: 20%;
+	margin:0 auto;
 	background-image:url('../img/button.png');
 	background-repeat:no-repeat;
 	background-position:top left;
 }
 
 .sub_btn{
-	position: absolute;
-	left:30%;
+	margin:0 auto;
 	width: 7rem;
 	z-index: 9;
 }
@@ -260,6 +259,7 @@ select {
 .btn_info{
 	font-size: 13px;
 	text-align: center;
+	margin:0 auto;
 }
 
 .foot_div{
