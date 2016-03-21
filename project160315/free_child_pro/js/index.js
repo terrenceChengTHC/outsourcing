@@ -58,16 +58,16 @@ $(function ($) {
     $('#submitBtn').on('click', function () {
         checkForm(function () {
             var formData = {
-                'name':$('#nameId').val(),
+                'uname':$('#nameId').val(),
                 'birthday':$('#birthdayId').val(),
                 'province':$('#loc_province').val(),
                 'city':$('#loc_city').val(),
-                'mobile':$('#mobileId').val(),
-                'channel':''
+                'phone':$('#mobileId').val(),
+                'productCode':'PA000000CXGF-CXAX-01'
             }
             $.ajax({
                 type: "post",
-                url: "test.json",
+                url: "http://simon168com.huhuhu.net/activity/webCount/count",
                 data: formData,
                 dataType: "json",
                 success: function(data){
