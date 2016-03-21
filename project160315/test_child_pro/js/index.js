@@ -52,7 +52,7 @@ $(function ($) {
 		callback();
 	}
     $('#submitBtn').on('click',function(){
-		checkForm(function(){
+		//checkForm(function(){
 			layer.open({
 				type: 1,
 				title: false,
@@ -62,34 +62,6 @@ $(function ($) {
 				shadeClose: true,
 				content: $('#shareDiv'),
 			});
-		})
+		//})
     });
-	$('#statement').on('click',function(){
-		layer.open({
-		    type: 1,
-		    title: false,
-		    closeBtn: 0,
-		    area:['100%', '100%'],
-		    skin: 'layui-layer-nobg', //没有背景色
-		    shadeClose: true,
-		    content: $('#statementDiv')
-		});
-    });
-	$('#escapeClause').on('click',function(){
-		layer.open({
-		    type: 1,
-		    title: false,
-		    closeBtn: 0,
-		    area:['100%', '100%'],
-		    skin: 'layui-layer-nobg', //没有背景色
-		    shadeClose: true,
-		    content: $('#escapeClauseDiv')
-		});
-    });
-	$('#statementDiv').on('click',function(){
-		layer.closeAll();
-	});
-	$('#escapeClauseDiv').on('click',function(){
-		layer.closeAll();
-	});
 });
