@@ -52,23 +52,23 @@ $(function ($) {
 		callback();
 	}
     $('#submitBtn').on('click',function(){
-		checkForm(function(){
-			var formData = {
-				'uname':'',
-				'birthday':$('#childBirthdayId').val(),
-				'parentBirthday':$('#parentBirthdayId').val(),
-				'province':$('#loc_province').val(),
-				'city':$('#loc_city').val(),
-				'phone':$('#mobileId').val(),
-				'insuranceCash':$('#insuranceCashId').val(),
-				'productCode':'PA000000CXGF-CXAX-04'
-			}
-			$.ajax({
-				type: "post",
-				url: "http://simon168com.huhuhu.net/activity/webCount/count",
-				data: formData,
-				dataType: "json",
-				success: function(data){
+		//checkForm(function(){
+		//	var formData = {
+		//		'uname':'',
+		//		'birthday':$('#childBirthdayId').val(),
+		//		'parentBirthday':$('#parentBirthdayId').val(),
+		//		'province':$('#loc_province').val(),
+		//		'city':$('#loc_city').val(),
+		//		'phone':$('#mobileId').val(),
+		//		'insuranceCash':$('#insuranceCashId').val(),
+		//		'productCode':'PA000000CXGF-CXAX-04'
+		//	}
+		//	$.ajax({
+		//		type: "post",
+		//		url: "http://simon168com.huhuhu.net/activity/webCount/count",
+		//		data: formData,
+		//		dataType: "json",
+		//		success: function(data){
 					layer.open({
 						type: 1,
 						title: false,
@@ -78,11 +78,11 @@ $(function ($) {
 						shadeClose: true,
 						content: $('#shareDiv'),
 					});
-				},
-				error: function(data){
-					layer.msg('网络错误，请尝试重新提交');
-				}
-			});
-		})
+			//	},
+			//	error: function(data){
+			//		layer.msg('网络错误，请尝试重新提交');
+			//	}
+			//});
+		//})
     });
 });

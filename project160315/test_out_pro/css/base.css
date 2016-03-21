@@ -205,11 +205,22 @@ select {
 .share-text{
 	position:relative;
 	width: 296px;
-	color: black;
-	font-size: 18px;
-	font-weight: bold;
+	color: #666;
+	font-size: 15px;
 	text-align: center;
+	margin-bottom: 10px;
 }
+.share-text li{
+	padding-top: 3px;
+	border-bottom:1px rgb(237,237,237) dashed;
+	padding-bottom: 3px;
+	text-align: left;
+}
+.share-text span{
+	font-weight: bold;
+	color:rgb(255,93,37);
+}
+
 .share-btn{
 	position:relative;
 	margin-left: 13px;
@@ -218,7 +229,8 @@ select {
 	background: rgb(255,93,37);
 	color: white;
 	font-size: 19px;
-	text-align: center
+	text-align: center;
+	padding-top: 5px;
 }
 
 .user_form{}
