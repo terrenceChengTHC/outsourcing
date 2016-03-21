@@ -197,25 +197,22 @@ select {
 }
 
 .share-content{
-	height:300px;
-	width:300px;
+	width:296px;
 	margin:0 auto;
-	background: url('../img/test_share.png');
+	background-color: white;
 	z-index: 2000;
 }
 .share-text{
-	position:absolute;
-	width: 300px;
-	margin-top: 150px;
+	position:relative;
+	width: 296px;
 	color: black;
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
 }
 .share-btn{
-	position:absolute;
-	margin-top: 200px;
-	margin-left: 15px;
+	position:relative;
+	margin-left: 13px;
 	height:30px;
 	width:270px;
 	background: rgb(255,93,37);

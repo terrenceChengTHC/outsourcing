@@ -52,16 +52,36 @@ $(function ($) {
 		callback();
 	}
     $('#submitBtn').on('click',function(){
-		checkForm(function(){
-			layer.open({
-				type: 1,
-				title: false,
-				closeBtn: 0,
-				area:['100%', '100%'],
-				skin: 'layui-layer-nobg', //没有背景色
-				shadeClose: true,
-				content: $('#shareDiv'),
-			});
-		})
+		//checkForm(function(){
+			//var formData = {
+			//	'childBirthday':$('#childBirthdayId').val(),
+			//	'parentBirthday':$('#parentBirthdayId').val(),
+			//	'province':$('#loc_province').val(),
+			//	'city':$('#loc_city').val(),
+			//	'mobile':$('#mobileId').val(),
+			//	'insuranceCash':$('#insuranceCashId').val(),
+			//	'channel':''
+			//}
+			//$.ajax({
+			//	type: "post",
+			//	url: "test.json",
+			//	data: formData,
+			//	dataType: "json",
+			//	success: function(data){
+					layer.open({
+						type: 1,
+						title: false,
+						closeBtn: 0,
+						area:['100%', '100%'],
+						skin: 'layui-layer-nobg', //没有背景色
+						shadeClose: true,
+						content: $('#shareDiv'),
+					});
+			//	},
+			//	error: function(data){
+			//		layer.msg('网络错误，请尝试重新提交');
+			//	}
+			//});
+		//})
     });
 });
