@@ -54,11 +54,12 @@ $(function ($) {
     $('#submitBtn').on('click',function(){
 		checkForm(function(){
 			var formData = {
-				'childBirthday':$('#childBirthdayId').val(),
+				'uname':'',
+				'birthday':$('#childBirthdayId').val(),
 				'parentBirthday':$('#parentBirthdayId').val(),
 				'province':$('#loc_province').val(),
 				'city':$('#loc_city').val(),
-				'mobile':$('#mobileId').val(),
+				'phone':$('#mobileId').val(),
 				'insuranceCash':$('#insuranceCashId').val(),
 				'productCode':'PA000000CXGF-CXAX-04'
 			}
