@@ -192,8 +192,7 @@ select {
 }
 
 .share-container{
-	position: fixed;
-	top: 3rem;
+	text-align: center;
 	z-index: 2000;
 }
 

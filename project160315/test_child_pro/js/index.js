@@ -1,14 +1,14 @@
 $(function ($) {
 	function checkForm(callback){
-		if($('#nameId').val()==""){
-			layer.tips('姓名不能为空', '#nameId', {
+		if($('#childBirthdayId').val()==""){
+			layer.tips('出生日期不能为空', '#childBirthdayId', {
 				tips: [1, '#3595CC'],
 				time: 2000
 			});
 			return false;
 		}
-		if($('#birthdayId').val()==""){
-			layer.tips('出生日期不能为空', '#birthdayId', {
+		if($('#parentBirthdayId').val()==""){
+			layer.tips('出生日期不能为空', '#parentBirthdayId', {
 				tips: [1, '#3595CC'],
 				time: 2000
 			});
@@ -37,6 +37,13 @@ $(function ($) {
 		}
 		if(!(/^1[3|4|5|7|8]\d{9}$/.test($('#mobileId').val()))){
 			layer.tips('手机号码有误，请重填', '#mobileId', {
+				tips: [1, '#3595CC'],
+				time: 2000
+			});
+			return false;
+		}
+		if($('#insuranceCashId').val()==""){
+			layer.tips('保障金额不能为空', '#insuranceCashId', {
 				tips: [1, '#3595CC'],
 				time: 2000
 			});

@@ -192,8 +192,7 @@ select {
 }
 
 .share-container{
-	position: fixed;
-	top: 3rem;
+	text-align: center;
 	z-index: 2000;
 }
 
@@ -242,7 +241,7 @@ select {
 }
 
 .foot_div{
-	background-color: rgb(49,82,166);
+	background-color: rgb(234,36,92);
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
