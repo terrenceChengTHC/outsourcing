@@ -56,51 +56,53 @@ $(function ($) {
 	}
     $('#submitBtn').on('click',function(){
 		checkForm(function(){
-			layer.open({
-				type: 1,
-				title: false,
-				closeBtn: 0,
-				area:['100%', '100%'],
-				skin: 'layui-layer-nobg', //没有背景色
-				shadeClose: true,
-				content: $('#shareDiv'),
+			var formData = {
+				'uname':$('#nameId').val(),
+				'birthday':$('#birthdayId').val(),
+				'province':$('#loc_province').val(),
+				'city':$('#loc_city').val(),
+				'phone':$('#mobileId').val(),
+				'productCode':'PA000000CXGF-CXAX-01'
+			}
+			$.ajax({
+				type: "post",
+				url: "http://simon168com.huhuhu.net/activity/webCount/count",
+				data: formData,
+				dataType: "json",
+				success: function(data){
+					layer.open({
+						type: 1,
+						title: false,
+						closeBtn: 0,
+						area:['100%', '100%'],
+						skin: 'layui-layer-nobg', //没有背景色
+						shadeClose: true,
+						content: $('#shareDiv'),
+					});
+				},
+				error: function(data){
+					layer.msg('网络错误，请尝试重新提交');
+				}
 			});
 		})
     });
 	$('#statement').on('click',function(){
-		var formData = {
-			'uname':$('#nameId').val(),
-			'birthday':$('#birthdayId').val(),
-			'province':$('#loc_province').val(),
-			'city':$('#loc_city').val(),
-			'phone':$('#mobileId').val(),
-			'productCode':'PA000000CXGF-CXAX-01'
-		}
-		$.ajax({
-			type: "post",
-			url: "http://simon168com.huhuhu.net/activity/webCount/count",
-			data: formData,
-			dataType: "json",
-			success: function(data){
-				layer.open({
-					type: 1,
-					title: false,
-					closeBtn: 1,
-					skin: 'layui-layer-nobg', //没有背景色
-					shadeClose: true,
-					content: $('#statementDiv')
-				});
-			},
-			error: function(data){
-				layer.msg('网络错误，请尝试重新提交');
-			}
+		layer.open({
+		    type: 1,
+		    title: false,
+		    closeBtn: 0,
+		    area:['100%', '100%'],
+		    skin: 'layui-layer-nobg', //没有背景色
+		    shadeClose: true,
+		    content: $('#statementDiv')
 		});
     });
 	$('#escapeClause').on('click',function(){
 		layer.open({
 		    type: 1,
 		    title: false,
-		    closeBtn: 1,
+		    closeBtn: 0,
+		    area:['100%', '100%'],
 		    skin: 'layui-layer-nobg', //没有背景色
 		    shadeClose: true,
 		    content: $('#escapeClauseDiv')
