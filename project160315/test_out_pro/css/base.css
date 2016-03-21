@@ -196,6 +196,34 @@ select {
 	z-index: 2000;
 }
 
+.share-content{
+	height:300px;
+	width:300px;
+	margin:0 auto;
+	background: url('../img/test_share.png');
+	z-index: 2000;
+}
+.share-text{
+	position:absolute;
+	width: 300px;
+	margin-top: 150px;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.share-btn{
+	position:absolute;
+	margin-top: 200px;
+	margin-left: 15px;
+	height:30px;
+	width:270px;
+	background: rgb(255,93,37);
+	color: white;
+	font-size: 19px;
+	text-align: center
+}
+
 .user_form{}
 
 .user_form li{
