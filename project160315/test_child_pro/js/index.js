@@ -60,11 +60,11 @@ $(function ($) {
 				'city':$('#loc_city').val(),
 				'mobile':$('#mobileId').val(),
 				'insuranceCash':$('#insuranceCashId').val(),
-				'channel':''
+				'productCode':'PA000000CXGF-CXAX-04'
 			}
 			$.ajax({
 				type: "post",
-				url: "test.json",
+				url: "http://simon168com.huhuhu.net/activity/webCount/count",
 				data: formData,
 				dataType: "json",
 				success: function(data){

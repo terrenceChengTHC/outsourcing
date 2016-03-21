@@ -62,7 +62,7 @@ $(function ($) {
 				'province':$('#loc_province').val(),
 				'city':$('#loc_city').val(),
 				'phone':$('#mobileId').val(),
-				'productCode':'PA000000CXGF-CXAX-01'
+				'productCode':'PA000000CXGF-CXAX-02'
 			}
 			$.ajax({
 				type: "post",
