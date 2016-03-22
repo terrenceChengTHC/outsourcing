@@ -61,6 +61,7 @@ $(function ($) {
 				'city':$('#loc_city').val(),
 				'phone':$('#mobileId').val(),
 				'insuranceCash':$('#insuranceCashId').val(),
+				'sex':$("input[name='sex']:checked").val(),
 				'productCode':'PA000000CXGF-CXAX-04'
 			}
 			$.ajax({

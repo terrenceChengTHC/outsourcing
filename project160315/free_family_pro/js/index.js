@@ -62,6 +62,7 @@ $(function ($) {
 				'province':$('#loc_province').val(),
 				'city':$('#loc_city').val(),
 				'phone':$('#mobileId').val(),
+				'sex':$("input[name='sex']:checked").val(),
 				'productCode':'PA000000CXGF-CXAX-02'
 			}
 			$.ajax({
