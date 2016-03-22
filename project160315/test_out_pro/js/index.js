@@ -66,7 +66,7 @@ $(function ($) {
 			}
 			$.ajax({
 				type: "post",
-				url: "http://simon168com.huhuhu.net/activity/webCount/count",
+				url: "http://120.76.145.3:8080/activity/webCount/count",
 				data: formData,
 				dataType: "json",
 				success: function(data){
