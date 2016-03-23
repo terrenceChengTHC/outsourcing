@@ -7,7 +7,7 @@ $(function ($) {
 			});
 			return false;
 		}
-		if($('#birthdayId').val()==""){
+		if($('#insurer_date').val()==""){
 			layer.tips('出生日期不能为空', '#birthdayId', {
 				tips: [1, '#3595CC'],
 				time: 2000
@@ -58,7 +58,7 @@ $(function ($) {
 		checkForm(function(){
 			var formData = {
 				'uname':$('#nameId').val(),
-				'birthday':$('#birthdayId').val(),
+				'birthday':$('#insurer_date').val(),
 				'province':$('#loc_province').val(),
 				'city':$('#loc_city').val(),
 				'phone':$('#mobileId').val(),

@@ -135,5 +135,5 @@ $(function ($) {
         maxDate: nowTime,
         minDate: minDate
     };
-    $("#insurer_date").mobiscroll(opt).date(opt);
+    $("#birthdayId").mobiscroll(opt).date(opt);
 });
