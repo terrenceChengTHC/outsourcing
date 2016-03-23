@@ -36,7 +36,48 @@ $(function ($) {
 			return false;
 		}
 		callback();
-	}
+	};
+	function setResShow(){
+		var insurCash = $('#insuranceCashId').val();
+		var rechargeType = $("input[name='rechargeType']:checked").val();
+		$('span[name=insurCash]').each(function(){
+			$(this).html(insurCash);
+		});
+		if(insurCash==28000){
+			if(rechargeType=='year'){
+				$("#tipsa").html("您每年需支付保费：<span>¥1473.00元</span>");
+				$("#tipsb").hide();
+				$("#tipsc").html("折合每天仅：<span>¥4.09元</span>");
+			}else{
+				$("#tipsa").html("您首期需支付三个月保费：<span>￥402.00元</span>");
+				$("#tipsb").html("以后每月支付：<span>￥134.00元</span>").show();
+				$("#tipsc").html("折合每天仅：<span>￥4.47元</span>");
+			}
+		}
+		if(insurCash==38000){
+			if(rechargeType=='year'){
+				$("#tipsa").html("您每年需支付保费：<span>¥1698.00元</span>");
+				$("#tipsb").hide();
+				$("#tipsc").html("折合每天仅：<span>¥4.72元</span>");
+			}else{
+				$("#tipsa").html("您首期需支付三个月保费：<span>￥462.00元</span>");
+				$("#tipsb").html("以后每月支付：<span>￥154.00元</span>").show();
+				$("#tipsc").html("折合每天仅：<span>￥5.13元</span>");
+			}
+		}
+		if(insurCash==48000){
+			if(rechargeType=='year'){
+				$("#tipsa").html("您每年需支付保费：<span>¥1923.00元</span>");
+				$("#tipsb").hide();
+				$("#tipsc").html("折合每天仅：<span>¥5.34元</span>");
+			}else{
+				$("#tipsa").html("您首期需支付三个月保费：<span>￥525.00元</span>");
+				$("#tipsb").html("以后每月支付：<span>￥175.00元</span>").show();
+				$("#tipsc").html("折合每天仅：<span>￥5.83元</span>");
+			}
+		}
+	};
+
     $('#submitBtn').on('click',function(){
 		checkForm(function(){
 			var formData = {
@@ -85,7 +126,6 @@ $(function ($) {
 	})
 	var nowTime = new Date();
 	var maxDate = new Date(nowTime.getFullYear(), nowTime.getMonth(), nowTime.getDate());
-	var minDate = new Date(nowTime.getFullYear()-59, nowTime.getMonth(), nowTime.getDate()-1);
 	var opt = {
 		preset: 'date', //日期
 		theme: 'android-ics light', //皮肤样式
@@ -96,8 +136,7 @@ $(function ($) {
 		cancelText: '取消',//取消按钮名籍我
 		dateOrder: 'yymmdd', //面板中日期排列格式
 		dayText: '日', monthText: '月', yearText: '年', //面板中年月日文字
-		maxDate: maxDate,
-		minDate: minDate
+		maxDate: maxDate
 	};
 	$("#birthdayId").mobiscroll(opt).date(opt);
 });

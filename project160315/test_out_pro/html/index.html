@@ -33,8 +33,9 @@
                     <p class="fr">
                         <select  id="insuranceCashId"  value="" style="width:10.5rem">
                             <option value="">请选择保障额度</option>
-                            <option value="10">10万</option>
-                            <option value="20">20万</option>
+                            <option value="28000">2.8万</option>
+                            <option value="38000">3.8万</option>
+                            <option value="48000">4.8万</option>
                         </select>
                     </p>
                 </li>
@@ -42,9 +43,8 @@
                     <label class="fl">意外伤害住院<br>日额保障金</label>
                     <p class="fr">
                         <select  id="insuranceDayCashId"  value="" style="width:10.5rem">
-                            <option value="">请选择保障额度</option>
+                            <option value="">请选择日额保障金</option>
                             <option value="10">150元/天</option>
-                            <option value="20">200元/天</option>
                         </select>
                     </p>
                 </li>
@@ -91,19 +91,20 @@
             <img src="../img/test_share_head.png" style="width:300px;margin:0 auto;">
             <div class="share-content">
                 <div class="share-text">
-                    <div style="padding-top: 8px;padding-bottom: 4px;">您每年需支付保费：<span>¥1698.00元</span></div>
-                    <div style="padding-top: 4px;padding-bottom: 8px;">折合每天仅：<span>¥4.70元</span></div>
+                    <div id="tipsa" style="padding-top: 8px;padding-bottom: 4px;">您每年需支付保费：<span>¥1698.00元</span></div>
+                    <div id="tipsb" style="padding-top: 4px;padding-bottom: 4px;display: none"></div>
+                    <div id="tipsc" style="padding-top: 4px;padding-bottom: 8px;">折合每天仅：<span>¥4.70元</span></div>
                     <ul style="font-size: 8px;width: 270px;margin: 0 auto;">
                         <li><span>您可获得的保障如下：</span></li>
-                        <li>意外身故保障:<span>38000</span>元</li>
-                        <li>意外伤残保障:<span>38000</span>元</li>
-                        <li>自驾车意外身故特别保障:<span>38000</span>元</li>
-                        <li>自驾车意外伤残特别保障:<span>38000</span>元</li>
-                        <li>公共交通意外身故保障:<span>38000</span>元</li>
-                        <li>公共交通意外伤残保障:<span>38000</span>元</li>
-                        <li>意外伤害日额津贴:<span>38000</span>元</li>
-                        <li>身故保障:<span>38000</span>元</li>
-                        <li>满期生存保险金:<span>38000</span>元</li>
+                        <li>意外身故保障:<span name="insurCash">38000</span>元</li>
+                        <li>意外伤残保障:<span name="insurCash">38000</span>元＊评定伤残等级对应比例</li>
+                        <li>自驾车意外身故特别保障:<span name="insurCash">38000</span>元</li>
+                        <li>自驾车意外伤残特别保障:<span name="insurCash">38000</span>元＊评定伤残等级对应比例</li>
+                        <li>公共交通意外身故保障:<span name="insurCash">38000</span>元</li>
+                        <li>公共交通意外伤残保障:<span name="insurCash">38000</span>元＊评定伤残等级对应比例</li>
+                        <li>外伤害住院日额津贴:<span>150</span>元/天</li>
+                        <li>身故保障:<span>所交保费的112%</span></li>
+                        <li>满期生存保险金:<span>所交保费的112%</span></li>
                     </ul>
                     <!--<a style="font-size: 8px;color: #666;margin-left: 5px">重 新 测 算</a>-->
                 </div>
