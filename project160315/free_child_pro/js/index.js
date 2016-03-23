@@ -120,11 +120,8 @@ $(function ($) {
     $('#escapeClauseDiv').on('click', function () {
         layer.closeAll();
     });
-    var myDate = new Date();
-    var maxDate = myDate.getFullYear()+'-'+(myDate.getMonth()+1)+'-'+myDate.getDate();
-    var minDate = (myDate.getFullYear()-16)+'-'+(myDate.getMonth()+1)+'-'+myDate.getDate();
-    //$('input[type=date]').attr('min',minDate);
-    //$('input[type=date]').attr('max',maxDate);
+    var nowTime = new Date();
+    var minDate = new Date(nowTime.getFullYear()-16, nowTime.getMonth(), nowTime.getDate()-1);
     var opt = {
         preset: 'date', //日期
         theme: 'android-ics light', //皮肤样式
@@ -135,8 +132,8 @@ $(function ($) {
         cancelText: '取消',//取消按钮名籍我
         dateOrder: 'yymmdd', //面板中日期排列格式
         dayText: '日', monthText: '月', yearText: '年', //面板中年月日文字
-        maxDate:new Date(maxDate),
-        minDate:new Date(minDate)
+        maxDate: nowTime,
+        minDate: minDate
     };
     $("#insurer_date").mobiscroll(opt).date(opt);
 });
