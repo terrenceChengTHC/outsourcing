@@ -73,7 +73,7 @@ $(function ($) {
 				jsonp:'countCallBack',  //服务器端获取回调函数名的key
 				jsonpCallback:'countCallBack', //回调函数名
 				success:function(data) {   //成功
-					if(data==true){
+					if(data.tag=='succ'){
 						layer.open({
 							type: 1,
 							title: false,
