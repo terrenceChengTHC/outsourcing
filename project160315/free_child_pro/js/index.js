@@ -135,8 +135,8 @@ $(function ($) {
         cancelText: '取消',//取消按钮名籍我
         dateOrder: 'yymmdd', //面板中日期排列格式
         dayText: '日', monthText: '月', yearText: '年', //面板中年月日文字
-        maxDate:maxDate,
-        minDate:minDate
+        maxDate:new Date(maxDate),
+        minDate:new Date(minDate)
     };
     $("#insurer_date").mobiscroll(opt).date(opt);
 });
