@@ -7,7 +7,7 @@ $(function ($) {
 			});
 			return false;
 		}
-		if($('#insurer_date').val()==""){
+		if($('#birthdayId').val()==""){
 			layer.tips('出生日期不能为空', '#birthdayId', {
 				tips: [1, '#3595CC'],
 				time: 2000
@@ -58,7 +58,7 @@ $(function ($) {
 		checkForm(function(){
 			var formData = {
 				'uname':$('#nameId').val(),
-				'birthday':$('#insurer_date').val(),
+				'birthday':$('#birthdayId').val(),
 				'province':$('#loc_province').val(),
 				'city':$('#loc_city').val(),
 				'phone':$('#mobileId').val(),
@@ -136,5 +136,5 @@ $(function ($) {
 		maxDate: nowTime,
 		minDate: minDate
 	};
-	$("#insurer_date").mobiscroll(opt).date(opt);
+	$("#birthdayId").mobiscroll(opt).date(opt);
 });
