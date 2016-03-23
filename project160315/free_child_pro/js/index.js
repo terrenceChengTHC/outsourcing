@@ -60,11 +60,14 @@ $(function ($) {
             var formData = {
                 'uname':$('#nameId').val(),
                 'birthday':$('#birthdayId').val(),
-                'province':$('#loc_province').val(),
-                'city':$('#loc_city').val(),
+                'province':$('#loc_province').find("option:selected").text(),
+                'provinceCode':$('#loc_province').val(),
+                'city':$('#loc_city').find("option:selected").text(),
+                'cityCode':$('#loc_city').val(),
                 'phone':$('#mobileId').val(),
                 'sex':$("input[name='sex']:checked").val(),
-                'productCode':'PA000000CXGF-CXAX-01'
+                'productCode':'PA000000CXGF-CXAX-01',
+                'mediaSrc':'wlk05-xmj-ywx-wltg-a31|01-child'
             }
             $.ajax({
                 type : "get",   //必须get，不填也行

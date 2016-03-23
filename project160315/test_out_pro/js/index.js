@@ -1,7 +1,7 @@
 $(function ($) {
 	function checkForm(callback){
 		if($('#birthdayId').val()==""){
-			layer.tips('出生日期不能为空', '#childBirthdayId', {
+			layer.tips('出生日期不能为空', '#birthdayId', {
 				tips: [1, '#3595CC'],
 				time: 2000
 			});
@@ -43,12 +43,14 @@ $(function ($) {
 				'uname':'',
 				'birthday':$('#childBirthdayId').val(),
 				'parentBirthday':$('#parentBirthdayId').val(),
-				'province':$('#loc_province').val(),
-				'city':$('#loc_city').val(),
+				'province':$('#loc_province').find("option:selected").text(),
+				'provinceCode':$('#loc_province').val(),
+				'city':$('#loc_city').find("option:selected").text(),
+				'cityCode':$('#loc_city').val(),
 				'phone':$('#mobileId').val(),
 				'insuranceCash':$('#insuranceCashId').val(),
 				'sex':$("input[name='sex']:checked").val(),
-				'productCode':'PA000000CXGF-CXAX-05'
+				'mediaSrc':'wlk02-xmj-s213-wltg-a31'
 			}
 			$.ajax({
 				type : "get",   //必须get，不填也行

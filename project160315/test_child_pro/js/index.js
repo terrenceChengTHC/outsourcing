@@ -57,12 +57,14 @@ $(function ($) {
 				'uname':'',
 				'birthday':$('#childBirthdayId').val(),
 				'parentBirthday':$('#parentBirthdayId').val(),
-				'province':$('#loc_province').val(),
-				'city':$('#loc_city').val(),
+				'province':$('#loc_province').find("option:selected").text(),
+				'provinceCode':$('#loc_province').val(),
+				'city':$('#loc_city').find("option:selected").text(),
+				'cityCode':$('#loc_city').val(),
 				'phone':$('#mobileId').val(),
 				'insuranceCash':$('#insuranceCashId').val(),
 				'sex':$("input[name='sex']:checked").val(),
-				'productCode':'PA000000CXGF-CXAX-04'
+				'mediaSrc':'wlk02-xmj-s103-wltg-a31'
 			}
 			$.ajax({
 				type : "get",   //必须get，不填也行
