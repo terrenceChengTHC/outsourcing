@@ -75,6 +75,9 @@ $(function ($) {
 				jsonpCallback:'countCallBack', //回调函数名
 				success:function(data) {   //成功
 					if(data.tag=='succ'){
+						var age = new Date().getFullYear() - new Date($('#childBirthdayId').val()).getFullYear();
+						var feeId = age+'-'+$("input[name='rechargeType']:checked").val()+'-'+$('#insuranceCashId').val();
+						$('#feeNum').html(new fee().find(feeId));
 						layer.open({
 							type: 1,
 							title: false,
@@ -94,6 +97,9 @@ $(function ($) {
 			});
 		})
     });
+	$('.share-btn').on('click',function(){
+		layer.closeAll();
+	})
 	var nowTime = new Date();
 	var maxDate = new Date(nowTime.getFullYear(), nowTime.getMonth(), nowTime.getDate());
 	var childMaxDate = new Date(nowTime.getFullYear(), nowTime.getMonth(), nowTime.getDate()-28);
