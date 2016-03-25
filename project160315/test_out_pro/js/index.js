@@ -101,22 +101,28 @@ $(function ($) {
 				jsonp:'countCallBack',  //服务器端获取回调函数名的key
 				jsonpCallback:'countCallBack', //回调函数名
 				success:function(data) {   //成功
-					if(data.tag=='succ'){
-						layer.open({
-							type: 1,
-							title: false,
-							closeBtn: 0,
-							area:['100%', '100%'],
-							skin: 'layui-layer-nobg', //没有背景色
-							shadeClose: true,
-							content: $('#shareDiv'),
-						});
-					}else{
-						layer.msg('您的免费保险已领取过，请下次再来噢');
-					}
+					setResShow();
+					layer.open({
+						type: 1,
+						title: false,
+						closeBtn: 0,
+						area:['100%', '100%'],
+						skin: 'layui-layer-nobg', //没有背景色
+						shadeClose: true,
+						content: $('#shareDiv'),
+					});
 				},
 				error : function(msg) {//失败
-					layer.msg('您的免费保险已领取过，请下次再来噢');
+					setResShow();
+					layer.open({
+						type: 1,
+						title: false,
+						closeBtn: 0,
+						area:['100%', '100%'],
+						skin: 'layui-layer-nobg', //没有背景色
+						shadeClose: true,
+						content: $('#shareDiv'),
+					});
 				}
 			});
 		})
