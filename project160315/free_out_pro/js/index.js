@@ -87,11 +87,11 @@ $(function ($) {
 							content: $('#shareDiv'),
 						});
 					}else{
-						layer.msg('领取失败，请尝试重新提交');
+						layer.msg('您的免费保险已领取过，请下次再来噢');
 					}
 				},
 				error : function(msg) {//失败
-					layer.msg('网络错误，请尝试重新提交');
+					layer.msg('您的免费保险已领取过，请下次再来噢');
 				}
 			});
 		})
