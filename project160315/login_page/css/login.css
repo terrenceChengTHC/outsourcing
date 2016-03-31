@@ -54,3 +54,14 @@ body{
     border-bottom:1px;
     color: white;
 }
+.login-btn{
+    width:259px;
+    height:41px;
+    margin-top: 20px;
+    margin-left: 22px;
+    text-align: center;
+    line-height: 41px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
