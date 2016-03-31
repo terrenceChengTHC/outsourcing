@@ -1,0 +1,56 @@
+body{
+    background-image: url("../img/background.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+
+.header-div{
+    margin-left: 130px;
+    margin-top: 100px;
+}
+
+.header-title{
+    background-image: url("../img/sub.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: -140px 0px;
+    height: 50px;
+    width: 423px;
+}
+.footer-diva{
+    background-image: url("../img/sub.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: 0px 0px;
+    height: 50px;
+    width: 58px;
+}
+.footer-divb{
+    background-image: url("../img/sub.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: -60px 0px;
+    height: 50px;
+    width: 75px;
+}
+
+.login-box{
+    float:right;
+    margin-right: 30px;
+    margin-top: 30px;
+    background-image: url("../img/loginBox.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 389px;
+    width: 450px;
+}
+.input-box{
+    background-color:transparent;
+    width: 216px;
+    height: 36px;
+    border-left:0px;
+    border-top:0px;
+    border-right:0px;
+    border-bottom:1px;
+    color: white;
+}
