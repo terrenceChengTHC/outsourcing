@@ -1,0 +1,90 @@
+body{
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+
+}
+.header-icon{
+    background-image: url("../img/icon.png");
+    background-repeat: no-repeat;
+    background-position:-85px 0px;
+    background-size: 700px;
+    width: 150px;
+    height: 90px;
+    top:20px;
+    margin-left: 250px;
+    position: absolute;
+}
+.container{
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+    height: 700px;
+}
+.content{
+    margin-top: 65px;
+}
+.banner-text{
+    background-image: url("../img/icon.png");
+    background-repeat: no-repeat;
+    background-position:-257px -10px;
+    background-size: 800px;
+    width: 520px;
+    height: 145px;
+    margin-left: 80px;
+}
+.tv{
+    background-image: url("../img/tv.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    width:600px;
+    height:400px;
+    margin-left: 10px;
+}
+.left-side{
+    float: left;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.right-side{
+    float: left;
+    background-image: url("../img/ques.png");
+    background-repeat: no-repeat;
+    background-size: 260px;
+    width:260px;
+    height:600px;
+    margin-left: 1px;
+}
+.left-foward{
+    float: left;
+    background-image: url("../img/icon.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width:55px;
+    height:55px;
+    margin: auto;
+    position: absolute;
+}
+.right-foward{
+    float: left;
+    background-image: url("../img/icon.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width:55px;
+    height:55px;
+    margin: auto;
+    position: absolute;
+}
+.tips-icon{
+    float: left;
+    background-image: url("../img/icon.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: -100px 0px;
+    width:55px;
+    height:55px;
+    margin: auto;
+    position: absolute;
+}
