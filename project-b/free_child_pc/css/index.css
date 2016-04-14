@@ -1,90 +1,125 @@
-body{
+body {
     background-image: url("../img/background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.header{
+
+.header {
 
 }
-.header-icon{
+
+.header-icon {
     background-image: url("../img/icon.png");
     background-repeat: no-repeat;
-    background-position:-85px 0px;
-    background-size: 700px;
+    background-position: -85px 0px;
+    background-size: 740px;
     width: 150px;
     height: 90px;
-    top:20px;
+    top: 20px;
     margin-left: 250px;
     position: absolute;
 }
-.container{
+
+.out-container {
     display: block;
     margin: 0 auto;
+    width: 1020px;
+}
+
+.container {
+    display: block;
     width: 900px;
     height: 700px;
+    float: left;
 }
-.content{
-    margin-top: 65px;
+
+.content {
+    margin-top: 50px;
 }
-.banner-text{
+
+.banner-text {
     background-image: url("../img/icon.png");
     background-repeat: no-repeat;
-    background-position:-257px -10px;
-    background-size: 800px;
+    background-position: -257px -10px;
+    background-size: 840px;
     width: 520px;
     height: 145px;
     margin-left: 80px;
 }
-.tv{
+
+.tv {
     background-image: url("../img/tv.png");
     background-repeat: no-repeat;
     background-size: 600px;
-    width:600px;
-    height:400px;
+    width: 600px;
+    height: 400px;
     margin-left: 10px;
 }
-.left-side{
+
+.left-side {
     float: left;
     margin-top: 40px;
     margin-left: 10px;
 }
-.right-side{
+
+.right-side {
     float: left;
     background-image: url("../img/ques.png");
     background-repeat: no-repeat;
     background-size: 260px;
-    width:260px;
-    height:600px;
+    width: 260px;
+    height: 600px;
     margin-left: 1px;
 }
-.left-foward{
+
+.left-border {
+    display: block;
+    width: 60px;
+    height: 700px;
     float: left;
-    background-image: url("../img/icon.png");
-    background-repeat: no-repeat;
-    background-size: 500px;
-    width:55px;
-    height:55px;
-    margin: auto;
-    position: absolute;
 }
-.right-foward{
-    float: left;
+
+.left-foward {
     background-image: url("../img/icon.png");
     background-repeat: no-repeat;
-    background-size: 500px;
-    width:55px;
-    height:55px;
-    margin: auto;
-    position: absolute;
+    background-size: 545px;
+    background-position: 0px -57px;
+    width: 58px;
+    height: 58px;
+    display: block;
+    margin-top: 350px;
 }
-.tips-icon{
+
+.right-border {
+    display: block;
+    width: 60px;
+    height: 700px;
+    float: right;
+}
+
+.right-foward {
+    background-image: url("../img/icon.png");
+    background-repeat: no-repeat;
+    background-size: 545px;
+    width: 58px;
+    height: 58px;
+    margin-top: 350px;
+    display: block;
+}
+
+.tips-icon {
     float: left;
     background-image: url("../img/icon.png");
     background-repeat: no-repeat;
-    background-size: 500px;
-    background-position: -100px 0px;
-    width:55px;
-    height:55px;
-    margin: auto;
+    background-size: 700px;
+    background-position: -648px 0px;
+    width: 50px;
+    height: 130px;
+    margin-top: 65px;
+}
+.footer{
+    display: block;
     position: absolute;
+    top: 0px;
+    margin-top: 500px;
 }
