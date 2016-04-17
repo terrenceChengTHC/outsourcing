@@ -25,6 +25,7 @@ body {
     margin: 0 auto;
     width: 1022px;
     clear: both;
+    position: relative;
 }
 .show-container{
     display: block;
