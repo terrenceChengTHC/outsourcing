@@ -27,13 +27,15 @@ body {
     clear: both;
     position: relative;
 }
-.show-container{
+
+.show-container {
     display: block;
     width: 900px;
     height: 700px;
     overflow: hidden;
     float: left;
 }
+
 .container {
     display: block;
     height: 700px;
@@ -66,10 +68,43 @@ body {
     overflow: hidden;
 }
 
-.tv .screen-a{
+.tv .screen-a {
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
     background-size: 1041px;
+    width: 400px;
+    height: 270px;
+    margin-top: 51px;
+    margin-left: 43px;
+}
+
+.tv .screen-b {
+    background-image: url("../img/screen.png");
+    background-repeat: no-repeat;
+    background-size: 1041px;
+    background-position: -403px 0px;
+    width: 400px;
+    height: 270px;
+    margin-top: 51px;
+    margin-left: 43px;
+}
+
+.tv .screen-c {
+    background-image: url("../img/screen.png");
+    background-repeat: no-repeat;
+    background-size: 1041px;
+    background-position: 0px -275px;
+    width: 400px;
+    height: 282px;
+    margin-top: 43px;
+    margin-left: 43px;
+}
+
+.tv .screen-d {
+    background-image: url("../img/screen.png");
+    background-repeat: no-repeat;
+    background-size: 1041px;
+    background-position: -403px -275px;
     width: 400px;
     height: 270px;
     margin-top: 51px;
@@ -202,12 +237,24 @@ ul {
     margin-top: 5px;
 }
 
-.option{
+.option {
     display: block;
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
     background-size: 1050px;
     background-position: 0px -583px;
+    width: 210px;
+    height: 70px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.options .on{
+    display: block;
+    background-image: url("../img/screen.png");
+    background-repeat: no-repeat;
+    background-size: 1050px;
+    background-position: 0px -658px;
     width: 210px;
     height: 70px;
     padding-left: 10px;

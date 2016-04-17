@@ -1,4 +1,8 @@
 $(function(){
+    var configure = {
+        showIndex : 1
+    }
+
     $('#bannerA').addClass('animated bounceInDown');
     $('#tvA').addClass('animated bounceInLeft');
     $('#rightA').addClass('animated bounceInRight');
@@ -16,7 +20,34 @@ $(function(){
 
     $("a[name='foward']").on('click',function(){
         var fn = this.className.split(' ')[1];
-        unslider.data('unslider')[fn]();
+        movePage(fn);
     });
 
+    $('.option').on('click',function(){
+        $(this).parent().find('.option').each(function(){
+            $(this).removeClass('on');
+        });
+        $(this).addClass('on');
+        movePage('next');
+    });
+
+    function movePage(fn){
+        unslider.data('unslider')[fn]();
+        if(fn=='prev'){
+            if(configure.showIndex==1){
+                configure.showIndex=4;
+            }else{
+                configure.showIndex-=1;
+            }
+        }
+        if(fn=='next'){
+            if(configure.showIndex==4){
+                configure.showIndex=1;
+            }else{
+                configure.showIndex+=1;
+            }
+        }
+        $('.page-point').removeClass('on');
+        $('#nav'+configure.showIndex).addClass('on');
+    }
 });
