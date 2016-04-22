@@ -2,36 +2,40 @@ body {
     background-image: url("../img/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 }
 
 .header {
 
 }
 
+.hide {
+    display: none;
+}
+
 .header-icon {
     background-image: url("../img/icon.png");
     background-repeat: no-repeat;
-    background-position: -68px 0px;
-    background-size: 640px;
-    width: 123px;
-    height: 70px;
-    top: 20px;
-    margin-left: 250px;
+    background-position: -72px 0px;
+    background-size: 700px;
+    width: 175px;
+    height: 101px;
+    margin-left: 175px;
     position: absolute;
 }
 
 .out-container {
     display: block;
     margin: 0 auto;
-    width: 915px;
+    width: 1000px;
     clear: both;
     position: relative;
 }
 
 .show-container {
     display: block;
-    width: 795px;
-    height: 570px;
+    width: 860px;
+    height: 590px;
     overflow: hidden;
     float: left;
 }
@@ -51,19 +55,19 @@ body {
 .banner-text {
     background-image: url("../img/icon.png");
     background-repeat: no-repeat;
-    background-position: -228px -10px;
-    background-size: 720px;
-    width: 435px;
+    background-position: -269px -10px;
+    background-size: 750px;
+    width: 405px;
     height: 130px;
-    margin-left: 80px;
+    margin-left: 170px;
 }
 
 .tv {
     background-image: url("../img/tv.png");
     background-repeat: no-repeat;
-    background-size: 540px;
-    width: 523px;
-    height: 338px;
+    background-size: 600px;
+    width: 583px;
+    height: 400px;
     margin-left: 10px;
     overflow: hidden;
 }
@@ -71,44 +75,44 @@ body {
 .tv .screen-a {
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
-    background-size: 933px;
-    width: 350px;
-    height: 246px;
-    margin-top: 42px;
-    margin-left: 40px;
+    background-size: 1000px;
+    width: 379px;
+    height: 260px;
+    margin-top: 50px;
+    margin-left: 46px;
 }
 
 .tv .screen-b {
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
-    background-size: 920px;
-    background-position: -354px 0px;
-    width: 350px;
-    height: 245px;
-    margin-top: 42px;
-    margin-left: 40px;
+    background-size: 1000px;
+    background-position: -387px 0px;
+    width: 379px;
+    height: 260px;
+    margin-top: 50px;
+    margin-left: 46px;
 }
 
 .tv .screen-c {
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
-    background-size: 920px;
-    background-position: 0px -248px;
-    width: 350px;
-    height: 253px;
-    margin-top: 42px;
-    margin-left: 40px;
+    background-size: 1020px;
+    background-position: 0px -269px;
+    width: 378px;
+    height: 275px;
+    margin-top: 40px;
+    margin-left: 41px;
 }
 
 .tv .screen-d {
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
-    background-size: 920px;
-    background-position: -350px -238px;
-    width: 350px;
-    height: 253px;
-    margin-top: 46px;
-    margin-left: 40px;
+    background-size: 993px;
+    background-position: -370px -261px;
+    width: 379px;
+    height: 260px;
+    margin-top: 50px;
+    margin-left: 37px;
 }
 
 .left-side {
@@ -121,9 +125,9 @@ body {
     float: left;
     background-image: url("../img/ques.png");
     background-repeat: no-repeat;
-    background-size: 238px;
-    width: 238px;
-    height: 516px;
+    background-size: 255px;
+    width: 247px;
+    height: 552px;
     margin-left: 1px;
 }
 
@@ -156,7 +160,8 @@ body {
     background-image: url("../img/icon.png");
     background-repeat: no-repeat;
     background-size: 545px;
-    width: 58px;
+    background-position: 1px 0px;
+    width: 57px;
     height: 58px;
     margin-top: 350px;
     display: block;
@@ -223,9 +228,9 @@ ul {
 }
 
 .ques {
-    padding-top: 158px;
+    padding-top: 169px;
     margin: auto;
-    width: 203px;
+    width: 209px;
     font-size: 1.4rem;
 }
 
@@ -241,12 +246,12 @@ ul {
     display: block;
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
-    background-size: 950px;
-    background-position: 0px -526px;
+    background-size: 996px;
+    background-position: 0px -551px;
     width: 190px;
-    height: 60px;
+    height: 65px;
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 7px;
     line-height: 47px;
 }
 
@@ -254,18 +259,19 @@ ul {
     display: block;
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
-    background-size: 950px;
-    background-position: 0px -595px;
-    width: 190px;
-    height: 60px;
+    background-size: 996px;
+    background-position: -743px -613px;
+    width: 193px;
+    height: 65px;
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 7px;
+    line-height: 47px;
 }
 
 .subForm {
-    padding-top: 158px;
+    padding-top: 169px;
     margin: auto;
-    width: 203px;
+    width: 209px;
     font-size: 1rem;
 }
 
@@ -273,9 +279,9 @@ ul {
     display: block;
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
-    background-size: 950px;
-    background-position: -205px -525px;
-    width: 190px;
+    background-size: 996px;
+    background-position: -219px -558px;
+    width: 195px;
     height: 48px;
     padding-left: 10px;
     padding-top: 5px;
@@ -286,18 +292,18 @@ ul {
     display: block;
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
-    background-size: 950px;
-    background-position: 0px -526px;
-    width: 190px;
-    height: 60px;
+    background-size: 1000px;
+    background-position: -745px -540px;
+    width: 195px;
+    height: 65px;
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 7px;
     line-height: 47px;
 }
 
 .subForm input {
     background-color: transparent;
-    width: 100px;
+    width: 105px;
     height: 1.5rem;
     font-size: 1rem;
     border-radius: 5px;
@@ -318,8 +324,8 @@ ul {
     background-image: url("../img/screen.png");
     background-repeat: no-repeat;
     background-size: 950px;
-    background-position: -406px -524px;
-    width: 152px;
+    background-position: -414px -521px;
+    width: 167px;
     height: 44px;
     margin: auto;
 }
@@ -347,7 +353,7 @@ ul {
 .footer {
     display: block;
     position: absolute;
-    top: 620px;
+    top: 600px;
     width: 100%;
     height: 80px;
 }
@@ -358,5 +364,114 @@ ul {
     text-align: center;
     margin-top: 10px;
     font-weight: bold;
-    font-size: 18px
+    font-size: 15px
+}
+
+.statement-container {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    width: 580px;
+    height: 356px;
+    border-radius: 5px 6px 7px 8px;
+}
+
+.statement-footer {
+    background-image: url("../img/screen.png");
+    background-repeat: no-repeat;
+    background-size: 950px;
+    background-position: -412px -564px;
+    width: 278px;
+    height: 49px;
+    margin: auto;
+}
+
+.detail-container {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+    padding: 60px 30px 20px 30px;
+    width: 330px;
+    height: 320px;
+    border-radius: 5px 6px 7px 8px;
+}
+
+.succ-container {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px 30px 20px 30px;
+    width: 330px;
+    height: 380px;
+    border-radius: 5px 6px 7px 8px;
+}
+
+.succTips{
+    background-image: url("../img/screen.png");
+    background-repeat: no-repeat;
+    background-size: 950px;
+    background-position: -412px -612px;
+    width: 295px;
+    height: 62px;
+    margin-bottom: 10px;
+}
+
+.infoTable {
+    border-collapse: collapse;
+    border-top: 3px solid rgb(130, 130, 130);
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.infoTable tr {
+    border: 1px solid rgb(130, 130, 130);
+    line-height: 10px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.infoTable td {
+    border: 0px;
+    width: 162px;
+    height: 35px;
+    line-height: 20px;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: black;
+    text-align: left;
+    font-family: "微软雅黑";
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: black;
+    text-align: left;
+    font-family: "微软雅黑";
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: black;
+    text-align: left;
+    font-family: "微软雅黑";
+}
+
+::-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: black;
+    text-align: left;
+    font-family: "微软雅黑";
 }
