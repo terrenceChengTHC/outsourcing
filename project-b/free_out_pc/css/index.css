@@ -173,7 +173,7 @@ body {
 
 .left-side-d {
     position: absolute;
-    height: 680px;
+    height: 635px;
     width: 431px;
     bottom: 0px;
     margin-left: 30px;
@@ -183,7 +183,7 @@ body {
 .left-side-d .subForm{
     display: block;
     background-color: rgb(244, 223, 12);
-    height: 360px;
+    height: 317px;
     width: 383px;
     margin: auto;
     padding-top: 60px;
@@ -355,7 +355,7 @@ ul {
 .subForm .blankInfo {
     display: block;
     width: 418px;
-    height: 40px;
+    height: 32px;
     padding-left: 10px;
     padding-top: 5px;
     line-height: 26px;
