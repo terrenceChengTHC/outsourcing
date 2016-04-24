@@ -38,6 +38,7 @@ body {
     width: 123px;
     height: 78px;
     float: left;
+    margin-right: 50px;
 }
 
 .tips-icon {
@@ -49,6 +50,7 @@ body {
     height: 83px;
     float: left;
     margin-left: 25px;
+    margin-top: 28px;
 }
 
 .out-side {
@@ -71,14 +73,13 @@ body {
     bottom: 0px;
     display: block;
     width: 1000px;
-    height: 600px;
-    overflow: hidden;
+    height: 700px;
     clear: both;
 }
 
 .container {
     display: block;
-    height: 600px;
+    height: 700px;
     position: relative;
 }
 
@@ -162,28 +163,40 @@ body {
     display: block;
     background-image: url("../img/page-d.png");
     background-repeat: no-repeat;
-    background-size: 1000px;
-    background-position: -633px -181px;
-    height: 365px;
-    width: 370px;
-    margin-left: 570px;
-    margin-top: 55px;
+    background-size: 600px;
+    background-position: -20px -250px;
+    height: 428px;
+    width: 560px;
+    margin-left: 441px;
+    margin-top: 150px;
 }
 
 .left-side-d {
     position: absolute;
-    height: 368px;
+    height: 680px;
     width: 431px;
     bottom: 0px;
+    margin-left: 30px;
+    margin-bottom: 0px;
 }
 
 .left-side-d .subForm{
+    display: block;
     background-color: rgb(244, 223, 12);
+    height: 360px;
+    width: 383px;
+    margin: auto;
+    padding-top: 60px;
+    -moz-box-shadow: 2px 2px 10px #909090;/*firefox*/
+    -webkit-box-shadow: 2px 2px 10px #909090;/*safari或chrome*/
+    box-shadow:2px 2px 10px #909090;/*opera或ie9*/
 }
 
+
 .ques-head {
-    height: 100px;
+    height: 163px;
     width: 431px;
+    display: block;
 }
 
 .ques-head-left {
@@ -205,7 +218,7 @@ body {
     background-image: url("../img/page-d.png");
     background-repeat: no-repeat;
     background-size: 600px;
-    height: 73px;
+    height: 77px;
     width: 431px;
     top: 145px;
     right: 0px;
@@ -339,51 +352,43 @@ ul {
     line-height: 47px;
 }
 
-.subForm {
-    padding-top: 169px;
-    margin: auto;
-    width: 209px;
-    font-size: 1rem;
-}
-
 .subForm .blankInfo {
     display: block;
-    background-image: url("../img/screen.png");
-    background-repeat: no-repeat;
-    background-size: 996px;
-    background-position: -219px -558px;
-    width: 195px;
-    height: 48px;
+    width: 418px;
+    height: 40px;
     padding-left: 10px;
     padding-top: 5px;
-    line-height: 37px;
+    line-height: 26px;
+    text-align: left;
+    color: rgb(122, 111, 6);
 }
 
-.subForm .blankInfoB {
+
+.subForm span{
     display: block;
-    background-image: url("../img/screen.png");
-    background-repeat: no-repeat;
-    background-size: 1000px;
-    background-position: -745px -540px;
-    width: 195px;
-    height: 65px;
-    padding-left: 10px;
-    padding-top: 7px;
-    line-height: 47px;
+    width: 120px;
+    float: left;
+}
+
+.subForm li {
+    height: auto;
+    width: 100%;
 }
 
 .subForm input {
-    background-color: transparent;
-    width: 105px;
+    background-color: white;
+    width: 180px;
     height: 1.5rem;
     font-size: 1rem;
     border-radius: 5px;
     border: 2px solid black;
+    display: block;
+    float: left;
 }
 
 .subForm select {
-    background-color: transparent;
-    width: 100px;
+    background-color: white;
+    width: 105px;
     height: 1.5rem;
     font-size: 1rem;
     border-radius: 5px;
@@ -392,13 +397,14 @@ ul {
 
 .subButt {
     display: block;
-    background-image: url("../img/screen.png");
+    background-image: url("../img/page-d.png");
     background-repeat: no-repeat;
-    background-size: 950px;
-    background-position: -414px -521px;
-    width: 167px;
-    height: 44px;
+    background-size: 600px;
+    background-position: -253px -76px;
+    width: 182px;
+    height: 51px;
     margin: auto;
+    margin-top: 20px;
 }
 
 #links {

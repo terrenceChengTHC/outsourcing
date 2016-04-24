@@ -31,12 +31,12 @@ $(function(){
     });
 
     var nowTime = new Date();
-    //laydate({
-    //    elem: '#birthdayId', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
-    //    event: 'focus', //响应事件。如果没有传入event，则按照默认的click
-    //    min: nowTime.getFullYear()-59+'-'+nowTime.getMonth()+'-'+nowTime.getDate()-1, //设定最小日期为当前日期
-    //    max: laydate.now(), //最大日期
-    //});
+    laydate({
+        elem: '#birthdayId', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+        event: 'focus', //响应事件。如果没有传入event，则按照默认的click
+        min: nowTime.getFullYear()-59+'-'+nowTime.getMonth()+'-'+nowTime.getDate()-1, //设定最小日期为当前日期
+        max: laydate.now(), //最大日期
+    });
 
     function movePage(fn){
         unslider.data('unslider')[fn]();

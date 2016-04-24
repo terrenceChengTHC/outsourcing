@@ -12,7 +12,7 @@
     <div class="header-icon"></div>
     <div class="right-icon">
         <div class="pingan-icon"></div>
-        <a id="detailButton" class="tips-icon" href="javascript:(0)"></a>
+
     </div>
 </div>
 
@@ -44,37 +44,40 @@
                         <div class="subForm">
                             <ul>
                                 <li class="blankInfo">
-                                    孩子姓名
-                                    <input id="nameId" type="text" placeholder="可输入姓名">
+                                    <span>投保姓名</span>
+                                    <input id="nameId" type="text" placeholder="请输入姓名">
                                 </li>
                                 <li class="blankInfo">
-                                    出生日期
-                                    <input type="text" id="birthdayId" placeholder="孩子出生日期" readonly>
+                                    <span>出生日期</span>
+                                    <input type="text" id="birthdayId" placeholder="请选择出生日期" readonly>
                                 </li>
-                                <li class="blankInfoB">
-                                    <div style="width: 81px;float: left">常住城市</div>
-                                    <div style="width: 81px;float: left">
-                                        <select id="loc_province" type="text" style="display: block;width: 81px;">
-                                        </select>
-                                        <select id="loc_city" type="text"
-                                                style="display: block;width: 81px;margin-top: 1px">
-                                        </select>
+                                <li class="blankInfo">
+                                    <div style="display: block">
+                                        <span>常住城市</span>
+                                        <select id="loc_province" type="text"></select>
+                                        <select id="loc_city" type="text"></select>
                                     </div>
                                 </li>
                                 <li class="blankInfo">
-                                    电话号码
-                                    <input id="mobileId" type="text" placeholder="家长手机哦">
+                                    <span>手机号码</span>
+                                    <input id="mobileId" type="text" placeholder="有效手机接收保单信息">
                                 </li>
                                 <li class="blankInfo">
-                                    被保险人性别
+                                    <span>被保险人性别</span>
                                     <select type="text" name="sex" style="width: 80px;">
-                                        <option value="-1">孩子哦</option>
+                                        <option value="-1">性别</option>
                                         <option value="1">男</option>
                                         <option value="0">女</option>
                                     </select>
                                 </li>
                                 <li style="margin-top: 5px;">
+                                    <span style="font-size: 3px;display: block;width: 100%;height:15px;text-align: center">
+                                        注：每个手机号码仅限一次机会，请留意官方手机短信通知。谢谢！
+                                    </span>
                                     <a href="javascript:(0)" class="subButt" id="submitBtn"></a>
+                                </li>
+                                <li style="font-size: 3px;display: block;width: 100%;height:15px;text-align: center;margin-top: 10px;line-height: 15px">
+                                    注：用户信息安全保护声明：您提供的个人信息仅免费投保使用<br>您的信息将被严格保密！我们不会泄露给任何第三方或其他用途。
                                 </li>
                             </ul>
                         </div>
@@ -84,6 +87,7 @@
             </ul>
         </div>
         <div class="right-border">
+            <a id="detailButton" class="tips-icon" href="javascript:(0)"></a>
             <a name="foward" class="right-foward next" href="javascript:(0)"></a>
         </div>
     </div>
