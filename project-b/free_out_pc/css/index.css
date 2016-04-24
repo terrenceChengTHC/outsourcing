@@ -158,14 +158,6 @@ body {
     margin-top: 55px;
 }
 
-.left-side-d {
-    position: absolute;
-    background-color: rgb(244,223,12);
-    height: 368px;
-    width: 500px;
-    bottom: 0px;
-}
-
 .right-side-d {
     display: block;
     background-image: url("../img/page-d.png");
@@ -178,9 +170,45 @@ body {
     margin-top: 55px;
 }
 
-.ques-head{
+.left-side-d {
+    position: absolute;
+    height: 368px;
+    width: 431px;
+    bottom: 0px;
+}
+
+.left-side-d .subForm{
+    background-color: rgb(244, 223, 12);
+}
+
+.ques-head {
     height: 100px;
-    width: 500px;
+    width: 431px;
+}
+
+.ques-head-left {
+    display: block;
+    position: absolute;
+    background-image: url("../img/page-d.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: 0px -77px;
+    height: 171px;
+    width: 235px;
+    top: 0px;
+    right: 0px;
+}
+
+.ques-head-line {
+    display: block;
+    position: absolute;
+    background-image: url("../img/page-d.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    height: 73px;
+    width: 431px;
+    top: 145px;
+    right: 0px;
 }
 
 .left-border {
