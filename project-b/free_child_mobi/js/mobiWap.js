@@ -25,7 +25,7 @@ $(function () {
         }
     }
     if (!mobile_device_detect()) {//进入PC
-        window.location = "http://simon168com.huhuhu.net/pingan/free_child_mobi/html/";
+        window.location = "http://simon168com.huhuhu.net/pingan/free_child_pc/html/";
     }
 })
 
