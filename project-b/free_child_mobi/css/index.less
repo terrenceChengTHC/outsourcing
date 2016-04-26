@@ -1,0 +1,139 @@
+.px2px(@name, @px) {
+    @{name}: round(@px / 2) * 1px;
+  [data-dpr="2"] & {
+      @{name}: @px * 1px;
+  }
+  // for mx3
+  [data-dpr="2.5"] & {
+      @{name}: round(@px * 2.5 / 2) * 1px;
+  }
+  // for 小米note
+  [data-dpr="2.75"] & {
+      @{name}: round(@px * 2.75 / 2) * 1px;
+  }
+  [data-dpr="3"] & {
+      @{name}: round(@px / 2 * 3) * 1px
+  }
+  // for 三星note4
+  [data-dpr="4"] & {
+      @{name}: @px * 2px;
+  }
+}
+
+.px2rem(@name, @px) {
+    @{name}: @px / 10 * 1rem;
+}
+
+html, body, div, ul, ol, li, dd, dt, dl, p, h3, h4, span, input, select, textarea, option, table, tr, td, header, footer, section {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background: #f6f5fa;
+  font-family: "微软雅黑";
+  .px2px(font-size, 15);
+  position: relative;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  top: 0;
+}
+
+.pingan-icon {
+  position: absolute;
+  display: block;
+  background-image: url("../img/icon.png");
+  background-size: 330px;
+  background-position: 0px -13px;
+  width: 101px;
+  height: 65px;
+  left: 10px;
+}
+
+.tips-icon {
+  display: block;
+  background-image: url("../img/icon.png");
+  background-size: 330px;
+  background-position: -106px 13px;
+  width: 52px;
+  height: 65px;
+  position: absolute;
+  right: 15px;
+}
+
+.content {
+  padding-top: 15px;
+  height: 568;
+}
+
+.tv {
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  background-size: 330px;
+  background-position: -11px -72px;
+  width: 294px;
+  height: 240px;
+  margin: auto;
+  display: block;
+}
+
+.banner-text {
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  background-size: 330px;
+  background-position: -11px -312px;
+  width: 309px;
+  height: 106px;
+  margin: auto;
+  display: block;
+}
+
+.ques {
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  background-size: 330px;
+  background-position: -3px -422px;
+  width: 308px;
+  height: 196px;
+  margin: auto;
+  display: block;
+  margin-top: -20px;
+}
+
+.footer {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 8px;
+  line-height: 5px;
+}
+
+.footer div {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  .px2px(font-size,15px);
+}
