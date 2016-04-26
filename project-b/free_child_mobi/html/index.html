@@ -15,41 +15,152 @@
     <title>30万少儿保险！真正的福气豪礼！快来拿走吧！</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/mobiscroll.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
 </head>
 <body>
 <div class="container">
     <div class="header">
         <div class="pingan-icon"></div>
-        <div class="tips-icon"></div>
+        <a class="tips-icon"></a>
     </div>
+
     <div class="content">
-        <div class="tv">
+        <ul>
+            <li>
+                <div id="tvA" class="tv">
+                    <div class="screen-a"></div>
+                </div>
+                <div id="bannerA" class="banner-text">
+                </div>
+                <div id="quesA" class="ques">
+                    <div class="title">
+                        (1)孩子成长期,您最关注孩子哪一方面?
+                    </div>
+                    <table >
+                        <tr>
+                            <td class="option">
+                                A.身体健康及医疗情况
+                            </td>
+                            <td class="option">
+                                B.教育发展及教育环境
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="option">
+                                C.个人安全及社会问题
+                            </td>
+                            <td class="option">
+                                D.无所谓
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div id="tvB" class="tv">
+                    <div class="screen-b"></div>
+                </div>
+                <div id="bannerB" class="banner-text">
+                </div>
+                <div id="quesB" class="ques">
+                    <div class="title">
+                        (2)家庭中已为孩子储备哪个阶段的资金?
+                    </div>
+                    <table >
+                        <tr>
+                            <td class="option">
+                                A.高中
+                            </td>
+                            <td class="option">
+                                B.大学
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="option">
+                                C.婚嫁
+                            </td>
+                            <td class="option">
+                                D.还没有考虑
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div id="tvC" class="tv">
+                    <div class="screen-c"></div>
+                </div>
+                <div id="bannerC" class="banner-text">
 
-        </div>
-        <div class="banner-text">
-
-        </div>
-        <div class="ques">
-            <table>
-                <tr>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-            </table>
-        </div>
+                </div>
+                <div id="quesC" class="ques">
+                    <div class="title">
+                        (3)您愿意花多少钱来储备上述开支?
+                    </div>
+                    <table >
+                        <tr>
+                            <td class="option">
+                                A.5000元以上/月
+                            </td>
+                            <td class="option">
+                                B.2000-5000元/月
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="option">
+                                C.1000-2000元/月
+                            </td>
+                            <td class="option">
+                                D.1000元以内/月
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div id="tvD" class="tv">
+                    <div id="bannerD" class="screen-d"></div>
+                </div>
+                <div class="subForm">
+                    <ul>
+                        <li class="blankInfo">
+                            <span>孩子姓名</span>
+                            <input id="nameId" type="text" placeholder="可输入姓名">
+                        </li>
+                        <li class="blankInfo">
+                            <span>出生日期</span>
+                            <input type="text" id="birthdayId" placeholder="孩子出生日期" readonly>
+                        </li>
+                        <li class="blankInfoB">
+                            <span>常住城市</span>
+                            <div style="width: 81px;float: left;margin-left: 35px;">
+                                <select id="loc_province" type="text" >
+                                </select>
+                                <select id="loc_city" type="text">
+                                </select>
+                            </div>
+                        </li>
+                        <li class="blankInfo">
+                            <span>电话号码</span>
+                            <input id="mobileId" type="text" placeholder="家长手机哦">
+                        </li>
+                        <li class="blankInfo">
+                            <span>被保险人性别</span>
+                            <select type="text" name="sex" style="width: 80px;">
+                                <option value="-1">孩子哦</option>
+                                <option value="1">男</option>
+                                <option value="0">女</option>
+                            </select>
+                        </li>
+                        <li style="width: 100%">
+                            <a href="javascript:(0)" class="subButt" id="submitBtn"></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
+
     <div class="footer">
         <div>
             <a id="about" target="_blank"
@@ -65,10 +176,10 @@
 </div>
 </body>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript"  src="../js/unslider-min.js"></script>
 <script type="text/javascript" src="../js/layer.js"></script>
 <script type="text/javascript" src="../js/location.js"></script>
 <script type="text/javascript" src="../js/area.js"></script>
 <script type="text/javascript" src="../js/mobiscroll.min.js"></script>
-<!--<script type="text/javascript" src="../js/base.js"></script>-->
 <script type="text/javascript" src="../js/index.js"></script>
 </html>
