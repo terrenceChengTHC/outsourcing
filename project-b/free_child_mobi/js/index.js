@@ -167,7 +167,7 @@ $(function(){
         layer.open({
             type: 1,
             title: false,
-            area: ['600px', '376px'],
+            area: ['300', '360px'],
             closeBtn: 1,
             skin: 'layui-layer-nobg', //没有背景色
             shadeClose: true,
@@ -178,7 +178,7 @@ $(function(){
         layer.open({
             type: 1,
             title: false,
-            area: ['600px', '416px'],
+            area: ['300', '400px'],
             closeBtn: 1,
             skin: 'layui-layer-nobg', //没有背景色
             shadeClose: true,
@@ -189,11 +189,11 @@ $(function(){
         layer.open({
             type: 1,
             title: false,
-            area: ['390px', '400px'],
+            area: ['300px', '340px'],
             closeBtn: 1,
             skin: 'layui-layer-nobg', //没有背景色
             shadeClose: true,
-            content: $('#detailDiv')
+            content: $('#succDiv')
         });
     });
 
