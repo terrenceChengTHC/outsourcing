@@ -17,14 +17,9 @@ $(function(){
         nav:0
     });
 
-    $("a[name='foward']").on('click',function(){
+    $("div[name='foward']").on('click',function(){
         var fn = this.className.split(' ')[1];
         movePage(fn);
-    });
-
-    $('body').on('click', function () {
-        if (configure.showIndex != 4)
-            movePage('next');
     });
 
     var nowTime = new Date();
