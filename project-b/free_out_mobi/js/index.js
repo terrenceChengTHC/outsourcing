@@ -3,9 +3,8 @@ $(function(){
         showIndex : 1
     }
 
-    $('#bannerA').addClass('animated bounceInLeft');
-    $('#tvA').addClass('animated bounceInDown');
-    $('#quesA').addClass('animated bounceInUp');
+    $('.man-div-a').addClass('animated bounceInLeft');
+    $('.text-div-a').addClass('animated fadeInDown');
 
     var unslider = $('.content').unslider({
         speed: 500,               //  幻灯片切换速度（毫秒）
@@ -23,12 +22,9 @@ $(function(){
         movePage(fn);
     });
 
-    $('.option').on('click',function(){
-        $(this).parent().find('.option').each(function(){
-            $(this).removeClass('on');
-        });
-        $(this).addClass('on');
-        movePage('next');
+    $('body').on('click', function () {
+        if (configure.showIndex != 4)
+            movePage('next');
     });
 
     var nowTime = new Date();
@@ -64,6 +60,28 @@ $(function(){
                 configure.showIndex+=1;
             }
         }
+        if(configure.showIndex==1){
+            $('.man-div-a').removeClass('animated bounceInLeft');
+            $('.text-div-a').removeClass('animated fadeInDown');
+            $('.man-div-a').addClass('animated bounceInLeft');
+            $('.text-div-a').addClass('animated fadeInDown');
+        }if(configure.showIndex==2){
+            $('.man-div-b').removeClass('animated bounceInLeft');
+            $('.text-div-b').removeClass('animated fadeInDown');
+            $('.man-div-b').addClass('animated bounceInLeft');
+            $('.text-div-b').addClass('animated fadeInDown');
+        }
+        if(configure.showIndex==3){
+            $('.man-div-c').removeClass('animated bounceInLeft');
+            $('.text-div-c').removeClass('animated fadeInDown');
+            $('.man-div-c').addClass('animated bounceInLeft');
+            $('.text-div-c').addClass('animated fadeInDown');
+        }
+        if(configure.showIndex==4){
+            $('.submit-form').removeClass('animated bounceInUp');
+            $('.submit-form').addClass('animated bounceInUp');
+        }
+
     }
 
     function checkForm(callback) {
@@ -189,7 +207,7 @@ $(function(){
         layer.open({
             type: 1,
             title: false,
-            area: ['300px', '340px'],
+            area: ['300px', '290px'],
             closeBtn: 1,
             skin: 'layui-layer-nobg', //没有背景色
             shadeClose: true,
