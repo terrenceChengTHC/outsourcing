@@ -193,7 +193,7 @@ $(function(){
             closeBtn: 1,
             skin: 'layui-layer-nobg', //没有背景色
             shadeClose: true,
-            content: $('#succDiv')
+            content: $('#detailDiv')
         });
     });
 
