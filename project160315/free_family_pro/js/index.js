@@ -65,7 +65,7 @@ $(function ($) {
 				'cityCode':$('#loc_city').val(),
 				'phone':$('#mobileId').val(),
 				'sex':$("input[name='sex']:checked").val(),
-				'productCode':'PA000000CXGF-CXAX-02',
+				'productCode':'PA000000CXSF-WYCX-01',
 				'mediaSrc':'wlk05-xmj-ywx-wltg-a31|02-family'
 			}
 			$.ajax({
