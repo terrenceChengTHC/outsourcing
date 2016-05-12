@@ -136,8 +136,8 @@ $(function(){
                 'cityCode':$('#loc_city').val(),
                 'phone':$('#mobileId').val(),
                 'sex':$("select[name='sex']").find("option:selected").val(),
-                'productCode':'PA000000CXGF-CXAX-01',
-                'mediaSrc':'wlk05-xmj-ywx-wltg-a31|01-child'
+                'productCode':'PA000000CXSF-WYCX-01',
+                'mediaSrc':'wlk05-xmj-ywx-wltg-a31|03-out'
             }
             $.ajax({
                 type : "get",   //必须get，不填也行
