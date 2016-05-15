@@ -82,10 +82,13 @@ $(function ($) {
                             type: 1,
                             title: false,
                             closeBtn: 0,
-                            area: ['100%', '100%'],
+                            area:['90%', 'auto'],
                             skin: 'layui-layer-nobg', //没有背景色
                             shadeClose: true,
-                            content: $('#shareDiv'),
+                            content: $('#succDiv'),
+                            success: function(layero){
+                                layero.css({'box-shadow':'none'});
+                            },
                         });
                     }else{
                         layer.msg('您的免费保险已领取过，请下次再来噢');
@@ -103,6 +106,7 @@ $(function ($) {
             title: false,
             closeBtn: 1,
             skin: 'layui-layer-nobg', //没有背景色
+            area:['90%', 'auto'],
             shadeClose: true,
             content: $('#statementDiv')
         });
@@ -113,6 +117,7 @@ $(function ($) {
             title: false,
             closeBtn: 1,
             skin: 'layui-layer-nobg', //没有背景色
+            area:['90%', 'auto'],
             shadeClose: true,
             content: $('#escapeClauseDiv')
         });
