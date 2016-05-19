@@ -485,8 +485,8 @@ ul {
     font-weight: bold;
     text-align: left;
     padding: 20px 30px 20px 30px;
-    width: 330px;
-    height: 380px;
+    width: 430px;
+    height: 530px;
     border-radius: 5px 6px 7px 8px;
 }
 
@@ -529,26 +529,26 @@ ul {
     /* WebKit browsers */
     color: black;
     text-align: left;
-    font-family: "微软雅黑";
+    font-family: "Microsoft YaHei";
 }
 
 ::-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: black;
     text-align: left;
-    font-family: "微软雅黑";
+    font-family: "Microsoft YaHei";
 }
 
 ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color: black;
     text-align: left;
-    font-family: "微软雅黑";
+    font-family: "Microsoft YaHei";
 }
 
 ::-ms-input-placeholder {
     /* Internet Explorer 10+ */
     color: black;
     text-align: left;
-    font-family: "微软雅黑";
+    font-family: "Microsoft YaHei";
 }

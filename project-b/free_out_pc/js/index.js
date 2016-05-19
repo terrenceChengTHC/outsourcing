@@ -151,7 +151,7 @@ $(function(){
                         layer.open({
                             type: 1,
                             title: false,
-                            area: ['390px', '420px'],
+                            area: ['490px', '570px'],
                             closeBtn: 1,
                             skin: 'layui-layer-nobg', //没有背景色
                             shadeClose: true,
