@@ -25,7 +25,7 @@ $(function () {
         }
     }
     if (mobile_device_detect()) {//进入移动端
-        window.location = "http://simon168com.huhuhu.net/pingan/free_out_mobi/html/";
+        window.location = "http://115.28.218.247/outsourcing/project-b/free_out_mobi/html/index.html";
     }
 })
 
